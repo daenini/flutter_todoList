@@ -2,9 +2,8 @@ part of values;
 
 class StringConst {
   //strings
-  static const String WELCOME = "안녕하세요";
   static const String REGISTER = "회원 가입";
-  static const String BACK = "환영합니다";
+  static const String WELCOME = "환영합니다";
   static const String SIGN_IN_MSG = "로그인이 필요합니다";
   static const String SIGN_UP_MSG = "반갑습니다.";
   static const String LOG_IN = "Log in";

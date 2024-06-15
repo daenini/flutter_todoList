@@ -20,7 +20,7 @@ class _TodoListScreenState extends State<TodoListScreen> {
     return Scaffold(
       appBar: AppBar(
         elevation: Sizes.ELEVATION_0,
-        backgroundColor: AppColors.pink,
+        backgroundColor: AppColors.blue,
         title: Text("Todo List"),
       ),
       body: TodoList(
@@ -29,7 +29,7 @@ class _TodoListScreenState extends State<TodoListScreen> {
         onToggleTodo: _toggleTodo, // 추가: 체크박스 토글 콜백 함수
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: AppColors.pink,
+        backgroundColor: AppColors.blue,
         onPressed: () => _addTodo(),
         child: Icon(
           Icons.add_task,
@@ -55,13 +55,13 @@ class _TodoListScreenState extends State<TodoListScreen> {
               CustomTextFormField(
                 hasPrefixIcon: true,
                 textInputType: TextInputType.text,
-                hintText: '할일 타이틀',
+                hintText: '할일',
                 hintTextStyle:
                     Styles.customTextStyle(fontWeight: FontWeight.w200),
                 textStyle: Styles.customTextStyle(),
                 prefixIcon: Icon(
                   Icons.add_task,
-                  color: AppColors.pink,
+                  color: AppColors.blackShade,
                   size: Sizes.ICON_SIZE_20,
                 ),
                 controller: controller,
@@ -75,8 +75,8 @@ class _TodoListScreenState extends State<TodoListScreen> {
                 child: CustomButton(
                   title: '추가',
                   height: 30,
-                  color: AppColors.pink,
-                  textStyle: TextStyle(color: AppColors.white),
+                  color: AppColors.blue,
+                  textStyle: TextStyle(color: AppColors.blackShade),
                   onPressed: () {
                     setState(() => todos.add(Todo(title: controller.text)));
                     Navigator.of(context).pop();

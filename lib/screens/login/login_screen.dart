@@ -25,7 +25,7 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
       appBar: AppBar(
         elevation: Sizes.ELEVATION_0,
-        backgroundColor: AppColors.pink,
+        backgroundColor: AppColors.blue,
         title: Text('로그인'),
       ),
       endDrawer: CustomDrawer(),
@@ -50,28 +50,14 @@ class _LoginScreenState extends State<LoginScreen> {
         Text(
           StringConst.WELCOME,
           style: textTheme.headlineMedium?.copyWith(
-            color: AppColors.pink,
-          ),
-        ),
-        SpaceH4(),
-        Text(
-          StringConst.BACK,
-          style: textTheme.headlineMedium?.copyWith(
-            color: AppColors.pink,
-          ),
-        ),
-        SpaceH4(),
-        Text(
-          StringConst.SIGN_IN_MSG,
-          style: textTheme.titleSmall?.copyWith(
-            color: AppColors.pink,
+            color: AppColors.blackShade,
           ),
         ),
         SpaceH80(),
         Text(
           StringConst.SIGN_IN,
           style: textTheme.headlineMedium?.copyWith(
-            color: AppColors.pink,
+            color: AppColors.blackShade,
           ),
         ),
       ],
@@ -89,7 +75,11 @@ class _LoginScreenState extends State<LoginScreen> {
 
     return Column(
       children: <Widget>[
-        CustomTextFormField(hasPrefixIcon: true, textInputType: TextInputType.emailAddress,          hintText: StringConst.HINT_EMAIL_ADDRESS,          hintTextStyle: Styles.customTextStyle(color: AppColors.pink),          textStyle: Styles.customTextStyle(color: AppColors.pink),          prefixIcon: Icon(
+        CustomTextFormField(hasPrefixIcon: true, textInputType: TextInputType.emailAddress,
+                            hintText: StringConst.HINT_EMAIL_ADDRESS,
+                            hintTextStyle: Styles.customTextStyle(color: AppColors.blackShade),
+                            textStyle: Styles.customTextStyle(color: AppColors.blackShade),
+          prefixIcon: Icon(
             FeatherIcons.mail,
             color: iconTheme.color,
             size: Sizes.ICON_SIZE_20,
@@ -97,7 +87,12 @@ class _LoginScreenState extends State<LoginScreen> {
           controller: email_controller,
         ),
         SpaceH20(),
-        CustomTextFormField(hasPrefixIcon: true, textInputType: TextInputType.text,          hintTextStyle: Styles.customTextStyle(color: AppColors.pink),          textStyle: Styles.customTextStyle(color: AppColors.pink),          hintText: StringConst.HINT_PASSWORD,          obscured: true,          prefixIcon: Icon(
+        CustomTextFormField(hasPrefixIcon: true, textInputType: TextInputType.text,
+                            hintTextStyle: Styles.customTextStyle(color: AppColors.blackShade),
+                            textStyle: Styles.customTextStyle(color: AppColors.blackShade),
+                            hintText: StringConst.HINT_PASSWORD,
+                            obscured: true,
+          prefixIcon: Icon(
             FeatherIcons.key,
             color: iconTheme.color,
             size: Sizes.ICON_SIZE_20,
@@ -107,7 +102,9 @@ class _LoginScreenState extends State<LoginScreen> {
         SpaceH20(),
 
 
-        CustomButton(title: StringConst.SIGN_ME_IN, textStyle: textTheme.bodyLarge?.copyWith( color: AppColors.white, fontWeight: FontWeight.w600, ),
+        CustomButton(title: StringConst.SIGN_ME_IN, textStyle:
+                     textTheme.bodyLarge?.copyWith( color: AppColors.white,
+                                                    fontWeight: FontWeight.w600, ),
           onPressed: () {
             if (
             memberProvider.login(email_controller.text, pw_controller.text))

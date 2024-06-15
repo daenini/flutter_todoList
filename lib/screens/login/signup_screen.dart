@@ -14,7 +14,7 @@ class SignUpScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: AppColors.pink,
+        backgroundColor: AppColors.blue,
         elevation: Sizes.ELEVATION_0,
         title: Text('회원가입'),
       ),

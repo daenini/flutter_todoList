@@ -12,12 +12,12 @@ class CustomDrawer extends StatelessWidget {
         children: [
           const DrawerHeader(
             decoration: BoxDecoration(
-              color: AppColors.pink,
+              color: AppColors.blue,
             ),
             child: Center(
-              child: Text('firstcoding app',
+              child: Text('todoList app',
                   style: TextStyle(
-                    color: Colors.yellowAccent,
+                    color: AppColors.blackShade,
                     fontSize: 32,
                   )),
             ),
@@ -56,7 +56,7 @@ class CustomDrawer extends StatelessWidget {
               if (memberProvider.nowLoginedMember == null) {
                 Navigator.pushNamed(context, "/login");
               } else {
-                Navigator.pushNamed(context, "/wether");
+                Navigator.pushNamed(context, "/weather");
               }
             }, // todo
           )

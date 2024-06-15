@@ -17,6 +17,18 @@ dependencies:
   flutter_feather_icons: ^2.0.0+1
   provider: ^6.0.5
   logger: ^2.0.2+1
+  # shared_preferences
+  shared_preferences: ^2.2.2
+  # url_launcher
+  url_launcher: ^6.0.12
+  # image_picker
+  image_picker: ^1.0.4
+  # file_picker
+  file_picker: ^6.1.1
+  # http
+  http: ^1.0.0
+  # intl
+  intl: ^0.18.1
 
 dev_dependencies:
   flutter_test:

@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
         child: Column(
           children: [
             SizedBox(height: 200),
-            Logo("firstcoding", 150, 150),
+            Logo("TodoListApp", 150, 150),
             SizedBox(height: 50),
             CustomButton( title: '시작하기',
               textStyle: TextStyle( color: AppColors.white,

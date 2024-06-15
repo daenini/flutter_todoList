@@ -5,6 +5,7 @@ import 'package:my_app_project/screens/login/login_screen.dart';
 import 'package:my_app_project/screens/login/signup_screen.dart';
 import 'package:my_app_project/screens/splash_screen.dart';
 import 'package:my_app_project/screens/todoList_screen.dart';
+import 'package:my_app_project/screens/weather_screen.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
         "/login": (context) => LoginScreen(),
         "/signup": (context) => SignUpScreen(),
         "/todo": (context) => TodoListScreen(),
-        "/weather": (context) =>
+        "/weather": (context) => WeaterScreen(),
       },
       home: HomePage(),
     );
