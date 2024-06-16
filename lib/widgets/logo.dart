@@ -14,7 +14,7 @@ class Logo extends StatelessWidget {
     return Column(
       children: [
         SvgPicture.asset(
-          "images/fc-logo.svg",
+          "images/SJCU.svg",
           height: height, width: width,),
         SizedBox(height: 20,), // 간격처리
         Text(
